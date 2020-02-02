@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>XSS-Reflected</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="fonts/ionicons.min.css">
+  <!--===============================================================================================-->
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/xss-reflected-style.css">
+  <!--===============================================================================================-->
+
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Project</b>Logo</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li class="header">Navigation</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="home.html"><i class="fa fa-link"></i><span>Home</span></a></li>
+        <li><a href="setup.html"><i class="fa fa-link"></i><span>Setup</span></a></li>
+        <li><a href="blute-force.html"><i class="fa fa-link"></i><span>Blute Force</span></a></li>
+        <li><a href="command-injection.html"><i class="fa fa-link"></i><span>Command injection</span></a></li>
+        <li><a href="csrf.html"><i class="fa fa-link"></i><span>CSRF</span></a></li>
+        <li><a href="file-inclusion.html"><i class="fa fa-link"></i><span>File Inclusion</span></a></li>
+        <li><a href="sqli.html"><i class="fa fa-link"></i><span>Sqli</span></a></li>
+        <li><a href="sqli-blind.html"><i class="fa fa-link"></i><span>Sqli Blind</span></a></li>
+        <li><a href="upload.html"><i class="fa fa-link"></i><span>Upload</span></a></li>
+        <li class="active"><a href="xss-reflected.html"><i class="fa fa-link"></i><span>XSS Reflected</span></a></li>
+        <li><a href="xss-stored.html"><i class="fa fa-link"></i><span>XSS Stored</span></a></li>
+        <li><a href="about.html"><i class="fa fa-link"></i><span>About</span></a></li>
+        <li><a href="login.html"><i class="fa fa-link"></i><span>Logout</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content container-fluid">
+      <section class="xss-refl">
+        <h3>Vulnerability Name: XSS-Reflected</h3>
+        <div class="name">
+          <form>
+            <div class="wrap-input">
+              <span class="label-input">What is your name:</span>
+              <input class="input" type="text">
+            </div>
+            <button>Submit</button>
+          </form>
+        </div>
+        <div class="info">
+          <p>More Info</p>
+        </div>
+
+      </section>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2019 <a href="#">Project name</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script src="jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="bootstrap/js/popper.js"></script>
+<!--===============================================================================================-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="js/home.js"></script>
+<!--===============================================================================================-->
+
+</body>
+</html>
